@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 2560px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000
+}
+
+/* Top nav styling */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff385c;
+}
+
+/* Center nav */
+.center-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Moves the center nav back by half its width */
+    display: flex;
+    gap: 20px;
+}
+
+.center-nav p {
+    font-size: larger;
+}
+
+/* Right icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+}
+
+.nav-icons span {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Navbar container */
+
+.search-container {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.search-bar p {
+    border-right: 1px solid black;
+    /* Adds a vertical line between items */
+    padding: 0 10px;
+}
+
+
+.search-bar button {
+    padding: 10px 10px;
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f7f7f7;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.icon-list {
+    margin: 10px 0;
+    gap: 50px;
+
+}
+
+.icon-list a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    /* Space between the box and icon */
+}
+
+.gray-box {
+    width: 20px;
+    /* Size of the gray box */
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 4px;
+    /* Optional: rounded corners */
+}
+
+section {
+    padding: 0 20px;
+}
+
+ul {
+    display: flex;
+    /* Flexbox makes items line up horizontally */
+    list-style: none;
+    /* Removes bullet points */
+    padding: 0;
+    gap: 20px;
+    /* Adds space between items */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: lightgray;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-content span {
+    font-weight: bold;
+    color: #ff385c;
+}
+
+
+
+.container-Meer {
+    max-width: 2560px;
+    padding: 0 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container-Meer p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container-Meer button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+footer {
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+/* Row 1 */
+.footer-row-1 {
+    font-size: 1.2em;
+}
+
+.footer-row-1 h3 {
+    margin-bottom: 10px;
+}
+
+.footer-row-2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+/* Row 3 - 3 columns */
+.footer-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.footer-row-3 ul {
+    display: block;
+    /* Removes horizontal flexbox */
+    padding: 0;
+    /* Removes padding */
+    margin: 0;
+    /* Removes margin */
+}
+
+.footer-row-3 li {
+    margin-bottom: 10px;
+    /* Adds space between items */
+}
